@@ -478,8 +478,8 @@ body {
     max-width: 600px;
     display: block;
     margin: auto;
-    top: -50px;
-    right: 0;
+    top: -41px;
+    right: -41px;
     z-index: 4;
 
     animation: spin 15s linear infinite; /* запускаем анимацию */ 
@@ -566,6 +566,14 @@ input {
         align-items: center;
         text-align: center;
         gap: 20px;
+    }
+
+    .hero-box {
+        order: 1;
+    }
+
+    .hero-text {
+        order: 2;
     }
 
     .hero-text {
@@ -841,8 +849,8 @@ input {
 
     /* CTA Fixed Button */
     .cta-fixed {
-        right: 50%;
-        transform: translateX(50%);
+        right: 5%;
+        /* transform: translateX(50%); */
         bottom: 30px;
         font-size: 15px;
         padding: 18px 30px;
