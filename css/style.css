@@ -1002,35 +1002,35 @@ input {
 
     /* Action section */
     .big-circle {
-        width: 250px;
-        height: 250px;
+        width: 65vh;
+        height: 65vh;
     }
     .norm-circle {
-        width: 190px;
-        height: 190px;
+        width: 55vh;
+        height: 55vh;
         top: 30px;
         left: 30px;
     }
     .small-circle {
-        width: 130px;
-        height: 130px;
-        top: 30px;
-        left: 30px;
+        width: 40vh;
+        height: 40vh;
+        top: 43px;
+        left: 46px;
     }
     .mini-circle {
-        width: 70px;
-        height: 70px;
-        top: 30px;
-        left: 30px;
+        width: 20vh;
+        height: 20vh;
+        top: 60px;
+        left: 57px;
     }
     .action-text {
-        width: 180px;
-        top: 40px;
-        right: 32px;
+        width: 250px;
+        top: 70px;
+        right: 65px;
         gap: 6px;
     }
     .action-text h4 {
-        font-size: 12px;
+        font-size: 18px;
     }
     .input-action {
         padding: 10px;
@@ -1039,11 +1039,12 @@ input {
     }
     .submit-action {
         padding: 8px 16px;
-        font-size: 12px;
+        font-size: 14px;
     }
     .hero-action-img {
-        width: 300px;
-        top: -30px;
+        width: 72vh;
+        top: -4vh;
+        left: -7vh
     }
 
     /* Features / Programs */
