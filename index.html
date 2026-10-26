@@ -1,274 +1,91 @@
-<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Ingear — Курсы робототехники для детей</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="InGear — студия робототехники для детей от 5 до 14 лет.">
+  <title>InGear — студия робототехники</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="setka">
-        <a class='cta-fixed' href="#form">Записаться</a>
+  <div class="site-shell">
+    <a class="cta-fixed" href="#form">Записаться</a>
+    <div class="nav-overlay" id="navOverlay"></div>
 
-        <div class="nav-overlay" id="navOverlay"></div>
-        <header class="header">
-            <div class="container">
-                <div class="logo">
-                    <div class="logo-hero">Ingear</div>
-                    <div class="logo-content">Курсы для детей</div>
-                </div>
-                <nav class="nav" id="navMenu">
-                    <a class='nav-link' href="#about">О нас</a>
-                    <a class='nav-link' href="#programs">Программы</a>
-                    <a class='nav-link' href="#contacts">Контакты</a>
-                </nav>
-                <button class="hamburger" id="hamburgerBtn" aria-label="Меню">
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
-                </button>
+    <header class="header">
+      <div class="container header-inner">
+        <a class="logo" href="#top" aria-label="InGear — на главную">
+          <span class="logo-hero">InGear</span>
+          <span class="logo-content">Студия робототехники</span>
+        </a>
+        <nav class="nav" id="navMenu" aria-label="Основная навигация">
+          <a class="nav-link" href="#about">О студии</a>
+          <a class="nav-link" href="#programs">Программы</a>
+          <a class="nav-link" href="#contacts">Контакты</a>
+          <a class="nav-cta" href="#form">Попробовать занятие</a>
+        </nav>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="eyebrow-dot"></span> Учимся создавать, а не просто смотреть</div>
+            <h1 id="hero-title">Робототехника,<br><strong>в которую хочется играть</strong></h1>
+            <p class="hero-lead">В InGear дети собирают роботов, программируют свои идеи и учатся работать в команде — через практику и интересные проекты.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#form">Записаться на пробное занятие <span>→</span></a>
+              <a class="button button-secondary" href="#programs">Посмотреть программы</a>
             </div>
-        </header>
-
-        <section class="hero">
-            <div class="container">
-                <div class="hero-section">
-                    <div class="hero-text">
-                        <h1>ПЕРВЫЙ <strong>СОБРАННЫЙ ТОБОЙ</strong> РОБОТ</h1>
-                        <p>Развиваем логику, программирование и инженерное мышление</p>
-                        <a class='form-link' href="#form">Записаться на пробное занятие</a>
-                    </div>
-                    <div class="hero-box">
-                        <img src="assets/img/mailo.png" alt="Робот вездеход" class="hero-img">
-                        <img class="hero-img-text" src="assets/img/robototeh.svg" alt="Робототехника для детей">
-                        <div class="circle-big">
-                            <div class="circle-small">
-                                <div class="circle-min">
-                                    <div class="circle-mini"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="hero-facts" aria-label="Факты о студии">
+              <div><strong>5–14</strong><span>лет</span></div>
+              <div><strong>100%</strong><span>практики</span></div>
+              <div><strong>4–8</strong><span>человек в группе</span></div>
             </div>
-        </section>
+          </div>
+          <div class="hero-art" aria-label="Робот InGear">
+            <div class="sticker sticker-top">Собери<br>свою идею!</div>
+            <div class="art-sun"></div>
+            <div class="art-card"><span class="art-label">IN<br>GEAR</span><span class="art-plus">+</span></div>
+            <img src="assets/img/mailo.png" alt="Робот InGear" class="hero-img">
+            <img src="assets/img/robototeh.svg" alt="Робототехника" class="hero-img-text">
+            <div class="sticker sticker-bottom"><span>⚙</span> Проект<br>начинается здесь</div>
+          </div>
+        </div>
+      </section>
 
-        <section class="section">
-            <div class="container">
-                <h2>ОБЛАСТИ, <strong>КОТОРЫЕ РАЗВИВАЕТ РОБОТОТЕХНИКА</strong></h2>
-                <p>Зачем ребенку этим заниматься?</p>
-                <div class="reason">
-                    <div class="reason-item">
-                        <div class="title-box">
-                            <h3 class="title-text">Математика, физика, геометрия</h3>
-                            <div class="title-circle">
-                                <img class="image-box" src="#" alt="#">
-                            </div>
-                        </div>
-                        <p>Понимание законов физики через практику и уверенное применение математики при решении задач</p>
-                    </div>
-                    <div class="reason-item">
-                        <div class="title-box">
-                            <h3 class="title-text">ТРИЗ и инженерное мышление</h3>
-                            <div class="title-circle">
-                                <img class="image-box" src="#" alt="#">
-                            </div>
-                        </div>
-                        <p>Ребенок научится находить простые решения в сложных задачах</p>
-                    </div>
-                    <div class="reason-item">
-                        <div class="title-box">
-                            <h3 class="title-text">Инженерное мышление</h3>
-                            <div class="title-circle">
-                                <img class="image-box" src="#" alt="#">
-                            </div>
-                        </div>
-                        <p>Ребёнок учится разбираться в устройстве механизмов, анализировать задачи и находить технические решения</p>
-                    </div>
-                    <div class="reason-item">
-                        <div class="title-box">
-                            <h3 class="title-text">Дизайн, творчество, проектирование</h3>
-                            <div class="title-circle">
-                                <img class="image-box" src="#" alt="#">
-                            </div>
-                        </div>
-                        <p>Все начинается с проектирования и ответа на вопросы: какая задача у робота и каким он должен быть для выполнения этой задачи</p>
-                    </div>
-                    <div class="reason-item">
-                        <div class="title-box">
-                            <h3 class="title-text">Информатика, программирование, электроника</h3>
-                            <div class="title-circle">
-                                <img class="image-box" src="#" alt="#">
-                            </div>
-                        </div>
-                        <p>Ребёнок освоит основы IT-навыков, которые станут фундаментом для будущей профессии</p>
-                    </div>
-                    <div class="reason-item">
-                        <div class="title-box">
-                            <h3 class="title-text">Работа руками и развитие мелкой моторики</h3>
-                            <div class="title-circle">
-                                <img class="image-box" src="#" alt="#">
-                            </div>
-                        </div>
-                        <p>Ребёнок развивает координацию движений и усидчивость, собирая робота из множества мелких деталей</p>
-                    </div>
-                    
-                </div>
-            </div> 
-        </section>
+      <section id="about" class="section intro-section">
+        <div class="container">
+          <div class="about-intro"><div class="section-heading"><span class="section-kicker">Почему InGear</span><h2>Инженерное мышление<br><strong>через игру и практику</strong></h2><p>Мы превращаем любопытство в первые настоящие проекты — бережно, понятно и с удовольствием.</p><a class="text-link" href="#programs">Выбрать направление <span>→</span></a></div><div class="project-note"><div class="project-note-top"><span class="note-pin"></span><span>Проект недели</span></div><div class="project-icon">⚙</div><h3>Умный помощник</h3><p>Соберём робота, который реагирует на свет и помогает решать настоящую задачу.</p><div class="project-progress"><span><i></i></span><b>3 шага из 5</b></div></div></div><div class="reason">
+            <article class="reason-item"><div class="icon-badge">⚙</div><h3>Собираем руками</h3><p>Ребёнок видит результат своей идеи и учится не бояться ошибок.</p></article>
+            <article class="reason-item"><div class="icon-badge orange">⌘</div><h3>Программируем</h3><p>От первых команд до собственных роботов и интерактивных проектов.</p></article>
+            <article class="reason-item"><div class="icon-badge yellow">★</div><h3>Растём в команде</h3><p>Занятия развивают самостоятельность, логику и умение договариваться.</p></article>
+          </div>
+        </div>
+      </section>
 
-        <section class="section">
-            <div class="map">
-                <div class="container">
-                    <h2>ГДЕ НАС НАЙТИ?</h2>
-                    <p>Наши занятия проходят в центре, по адресу: ул. Абая 123, Алматы</p>
-                    <p>Используйте мышь и кнопки +/- для приближения на карте.</p>
-                </div>
-            </div>
-        </section>
-        <section class="section">
-            <div class="lessons">
-                <div class="container">
-                    <h2>Уроки</h2>
-                    <p>Каждый урок — это практическая работа с настоящим роботом.</br>
-                    </br>Сначала ученики получают набор LEGO и инструкцию по сборке робота. Шаг за шагом они конструируют модель, знакомятся с деталями и понимают, как работает механизм.</br>
-                    </br>После сборки робот «оживает»: ученики пишут программу, которая управляет движением, действиями и реакциями робота. Команды сразу проверяются на практике — робот едет, поворачивает, реагирует на условия.</br>
-                    </br>В конце занятия дети тестируют своего робота, исправляют ошибки и улучшают работу конструкции и программы. Такой формат развивает инженерное мышление, логику и умение доводить задачу до результата.</p>
-                    <div class="text-info">
-                        <div class="item-info">
-                            <h3 class="title-info">5-7 детей</h3>
-                            <p>занимается в группе</p>
-                        </div>
-                        <div class="item-info">
-                            <h3 class="title-info">100 минут</h3>
-                            <p>длится 1 занятие</p>
-                        </div>
-                        <div class="item-info">
-                            <h3 class="title-info">4 уровня</h3>
-                            <p>сложности роботов</p>
-                        </div>
-                    </div>
-                    <div class="gallery-container">
-                        <button class="gallery-btn prev">&#10094;</button>
-                        <div class="gallery-track">
-                            <img src="assets/img/lesson1.png" alt="Урок 1" class="gallery-img">
-                            <img src="assets/img/lesson2.png" alt="Урок 2" class="gallery-img">
-                            <img src="assets/img/lesson3.png" alt="Урок 3" class="gallery-img">
-                        </div>
-                        <button class="gallery-btn next">&#10095;</button>
-                    </div>
-
-
-                </div>
-            </div>
-        </section>
-        <section id="about" class="section">
-            <div class="container">
-                <h2>ПОЧЕМУ СТОИТ СХОДИТЬ НА <strong>ОТКРЫТЫЙ УРОК</strong></h2>
-                <div class="first-leasson">
-                    <div class="list">
-                        <ul class="text-list">
-                            <li class="list-item">Вы сможете познакомиться со школой и увидеть, где и как проходят занятия</li>
-                            <li class="list-item">Это полноценный живой урок длительностью 40 минут, а не день открытых дверей</li>
-                            <li class="list-item">Открытый урок ведет ваш будущий преподаватель</li>
-                            <li class="list-item">Преподаватель оценит способности ученика и примет решение, в какой группе ребенку будет заниматься наиболее комфортно</li>
-                        </ul>
-                    </div>
-                    <div class="action">
-                        <div class="big-circle">
-                            <img class="hero-action-img" src="assets/img/open_leasson.svg" alt="Открытый урок">
-                            <div class="action-text">
-                                <h4><strong>Оставьте заявку, чтобы узнать ближайшую дату и время открытого урока</strong></h4>
-                                <input class="input-action"  placeholder="Имя" type="text">
-                                <input class="input-action"  placeholder="Телефон" type="text">
-                                <button class="submit-action" type="submit">Отправить</button>
-                            </div>
-                            <div class="norm-circle">
-                                <div class="small-circle">
-                                    <div class="mini-circle"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="features">
-                    <div class="card">
-                        <h3>Практика 80%</h3>
-                        <p>Дети создают реальные проекты</p>
-                    </div>
-                    <div class="card">
-                        <h3>Малые группы</h3>
-                        <p>Индивидуальный подход к каждому</p>
-                    </div>
-                    <div class="card">
-                        <h3>Современные технологии</h3>
-                        <p>LEGO, Arduino, программирование</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="advantages">
-                <div class="container">
-                    <h2>НАШИ ПРЕИМУЩЕСТВА</h2>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="gallery">
-                <div class="container">
-                    <h2>ПОСМОТРИТЕ НА РАБОТЫ НАШИХ УЧЕНИКОВ</h2>
-                    
-                </div>
-            </div>
-        </section>
-
-        <section id="programs" class="section dark">
-            <div class="container">
-                <h2>Программы</h2>
-                <div class="programs">
-                    <div class="card">
-                        <h3>6–8 лет</h3>
-                        <p>Основы алгоритмов и LEGO</p>
-                    </div>
-                    <div class="card">
-                        <h3>9–12 лет</h3>
-                        <p>Scratch и Arduino</p>
-                    </div>
-                    <div class="card">
-                        <h3>13–14 лет</h3>
-                        <p>Python и электроника</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="form" class="section">
-            <div class="container">
-                <h2>Записаться на занятие</h2>
-                <form id="contactForm">
-                    <input type="text" placeholder="Имя ребёнка" required>
-                    <input type="number" placeholder="Возраст" required>
-                    <input type="tel" placeholder="Телефон родителя" required>
-                    <button type="submit" class="btn-primary">Отправить заявку</button>
-                </form>
-                <p id="formMessage"></p>
-            </div>
-        </section>
-
-        <footer id="contacts" class="footer">
-            <div class="container">
-                <p>© 2026 Ingear — Курсы робототехники</p>
-                <p>Фабричный</p>
-            </div>
-        </footer>
-
-        <script src="js/main.js"></script>
+      <section id="programs" class="section programs-section">
+  <div class="container">
+    <div class="programs-heading"><div class="section-heading"><span class="section-kicker">Направления обучения</span><h2>Маршрут от первой детали<br><strong>до собственного проекта</strong></h2><p>Подбираем программу по возрасту и интересам, чтобы ребёнку было интересно расти дальше.</p></div><div class="route-mark"><span>01</span><i></i><span>02</span><i></i><span>03</span></div></div>
+    <div class="programs">
+      <article class="program-card program-card-blue"><div class="program-card-head"><span class="program-number">01</span><span class="program-age">5–7 лет</span></div><div class="program-illustration blocks"><span></span><span></span><span></span></div><h3>Первые роботы</h3><p>Знакомимся с механизмами, конструируем и учимся мыслить последовательно.</p><ul><li>Конструкторы LEGO</li><li>Простые механизмы</li><li>Первые командные задачи</li></ul><a href="#form" class="program-link">Узнать о программе <span>→</span></a></article>
+      <article class="program-card program-card-featured"><div class="program-card-head"><span class="program-number">02</span><span class="program-age">8–12 лет</span></div><div class="program-illustration robot-face"><span></span><span></span><i></i></div><h3>Робототехника</h3><p>LEGO, Arduino, датчики и программирование через понятные проекты.</p><ul><li>Собираем и программируем</li><li>Работаем с датчиками</li><li>Защищаем свои проекты</li></ul><a href="#form" class="program-link">Узнать о программе <span>→</span></a></article>
+      <article class="program-card program-card-orange"><div class="program-card-head"><span class="program-number">03</span><span class="program-age">13–14 лет</span></div><div class="program-illustration code-window"><b>&lt;/&gt;</b><span></span><span></span></div><h3>Код и проекты</h3><p>Python, электроника и командная работа над решениями для реального мира.</p><ul><li>Python и алгоритмы</li><li>Электроника и прототипы</li><li>Проектное мышление</li></ul><a href="#form" class="program-link">Узнать о программе <span>→</span></a></article>
     </div>
+  </div>
+</section>
+
+      <section id="form" class="section form-section"><div class="container form-wrap"><div><span class="section-kicker">Первый шаг</span><h2>Попробуйте занятие<br><strong>вместе с InGear</strong></h2><p>Оставьте контакты — мы расскажем о программах и подберём подходящую группу.</p></div><form id="contactForm"><label>Имя ребёнка<input type="text" name="name" placeholder="Как зовут?" required></label><label>Возраст<input type="number" name="age" min="5" max="14" placeholder="5–14" required></label><label>Телефон родителя<input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required></label><button type="submit" class="button button-primary">Отправить заявку <span>→</span></button><p id="formMessage" role="status"></p></form></div></section>
+    </main>
+
+    <footer id="contacts" class="footer"><div class="container footer-inner"><div class="logo"><span class="logo-hero">InGear</span><span class="logo-content">Студия робототехники</span></div><p>Создаём будущее вместе · © 2026 InGear</p></div></footer>
+  </div>
+  <script src="js/main.js"></script>
 </body>
 </html>
+
 
